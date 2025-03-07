@@ -10,6 +10,13 @@ body {
     display: inline-flex;
 }
 
+.header {
+  font-family: monospace;
+  font-size: 30px;
+  padding: 15px;
+}
+
+
 #navbar {
   position: fixed;
   top: 0;
@@ -18,8 +25,11 @@ body {
   background-color: #555;
   text-align: center;
   display: flex;
-  align-items: left;
+  align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  gap: 250px;
+  z-index: 1000;
 }
 
 .nav-btn {
@@ -50,27 +60,26 @@ body {
   margin: 0 auto;
   max-width: 65%;
   align-items: center;
-  /*background: rgba(255, 255, 255, 0.2); /* Sfondo trasparente */
-  /*backdrop-filter: blur(7px); /* Effetto sfocato */
-  /*-webkit-backdrop-filter: blur(7px); /* Per compatibilità Safari */
-  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+  background: rgba(255, 255, 255, 0.2); /* Sfondo trasparente */
+  backdrop-filter: blur(13px); /* Effetto sfocato */
+  -webkit-backdrop-filter: blur(13px); /* Per compatibilità Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leggera ombra */
   padding: 20px;
   color: white;
   text-align: center;
   margin-top: 50px;
 }
 
-h1, h2 {
-  font-family: monospace;
-  padding: 15px;
-}
-
 #main {
   font-family: monospace;
   font-size: 1.3em;
-  max-width: 50%;
+  height: 300px;
   padding: 10px;
   align-items: center;
+}
+
+#links {
+  height: 200px;
 }
 
 footer {

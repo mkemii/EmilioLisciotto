@@ -15,21 +15,19 @@
 <body>
 
     <nav id="navbar">
-        <button class="nav-btn">About me</button>
+        <button class="nav-btn" id="abtButton">About me</button>
         <button class="nav-btn">Competenze</button>
         <button class="nav-btn">Progetti</button>
-        <button class="nav-btn">Links</button>
+        <button class="nav-btn" id="linkButton">Links</button>
     </nav>
 
     <button onclick="topFunction()" id="TopBtn">⬆️</button>
 
     <div class="container">
 
-        <div class="header">
-            <img alt="logo" src="/public/WOnutM.png">
-            <h1>Welcome to my website!</h1>
-        </div>
-        <div class="main">
+        <h1 class="header">Benvenuto sul mio sito!</h1>
+
+        <div id="main">
             <p id="main-txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -41,8 +39,9 @@
 
             </p>
         </div>
-        <div class="links">
-            <h2 id="header">My projects & links</h2>
+        
+        <div id="links">
+            <h1 class="header">I miei link</h1>
             <div id="links-txt">
                 <a href="https://github.com/mkemii" target="_blank"><button class="BtnLink"><i class="fab fa-github"></i> GitHub</button></a>
                 <a href="https://www.instagram.com/emii.dev/" target="_blank"><button class="BtnLink"><i class="fab fa-instagram"></i> Instagram</button></a>
@@ -50,7 +49,9 @@
                 <a href="mailto:emiprogrammazione@gmail.com" target="_blank"><button class="BtnLink"><i class="fab fa-solid fa-envelope"></i> E-mail</button></a>
             </div>
         </div>
+
     </div>
+
     <footer id="copyright">
         @ MKEmii, <span id="copy"></span>
     </footer>

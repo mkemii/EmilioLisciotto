@@ -38,3 +38,17 @@ window.onblur = function() {
 window.onfocus = function() {
   document.title = 'MKEmii';
 }
+
+//######################################################################
+//BOTTONI REDIRECT TO SECTION ##########################################
+//######################################################################
+
+//about me
+document.getElementById('abtButton').addEventListener('click', function() {
+   window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+//link
+document.getElementById('linkButton').addEventListener('click', function() {
+   document.getElementById('links').scrollIntoView({ behavior: 'smooth' });
+});
