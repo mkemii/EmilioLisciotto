@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MKEmii's official portfolio all useful links and info can be found here">
     <meta name=“robots” content=noindex, follow”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="icon" type="image/x-icon" href="/public/icon.png">
     <title>MKEmii</title>
@@ -13,9 +14,16 @@
 
 <body>
 
-    <div class="container">
+    <nav id="navbar">
+        <button class="nav-btn">About me</button>
+        <button class="nav-btn">Competenze</button>
+        <button class="nav-btn">Progetti</button>
+        <button class="nav-btn">Links</button>
+    </nav>
 
-        <button onclick="topFunction()" id="TopBtn">↑</button>
+    <button onclick="topFunction()" id="TopBtn">⬆️</button>
+
+    <div class="container">
 
         <div class="header">
             <img alt="logo" src="/public/WOnutM.png">
@@ -35,11 +43,11 @@
         </div>
         <div class="links">
             <h2 id="header">My projects & links</h2>
-            <div class="links-txt">
-                <a href="https://github.com/mkemii" target="_blank"><button class="BtnLink">GitHub</button></a>
-                <a href="https://www.instagram.com/emii.dev/" target="_blank"><button class="BtnLink">Instagram</button></a>
-                <a href="https://profile.playstation.com/emi09-gamer" target="_blank"><button class="BtnLink">PS Network</button></a>
-                <a href="mailto:emiprogrammazione@gmail.com" target="_blank"><button class="BtnLink">E-mail</button></a>
+            <div id="links-txt">
+                <a href="https://github.com/mkemii" target="_blank"><button class="BtnLink"><i class="fab fa-github"></i> GitHub</button></a>
+                <a href="https://www.instagram.com/emii.dev/" target="_blank"><button class="BtnLink"><i class="fab fa-instagram"></i> Instagram</button></a>
+                <a href="https://profile.playstation.com/emi09-gamer" target="_blank"><button class="BtnLink"><i class="fab fa-playstation"></i> PS Network</button></a>
+                <a href="mailto:emiprogrammazione@gmail.com" target="_blank"><button class="BtnLink"><i class="fab fa-solid fa-envelope"></i> E-mail</button></a>
             </div>
         </div>
     </div>

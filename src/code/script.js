@@ -1,11 +1,17 @@
+//######################################################################
+//FOOTER CHE CAMBIA DATA ###############################################
+//######################################################################
+
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById('copy').innerHTML = year;
 
-// Get the button
+//######################################################################
+//BOTTONE TORNA SU #####################################################
+//######################################################################
+
 let mybutton = document.getElementById("TopBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -18,5 +24,17 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+//######################################################################
+//CAMBIO NOME TAB QUANDO NON SU ESSA ###################################
+//######################################################################
+
+window.onblur = function() {
+  document.title = 'Mi manchi T_T';
+}
+
+window.onfocus = function() {
+  document.title = 'MKEmii';
 }
