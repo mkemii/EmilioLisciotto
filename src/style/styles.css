@@ -16,9 +16,8 @@ body {
     font-family: sans-serif;
 }
 
-
 .container {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 80%;
   height: max-content;
   align-items: center;
@@ -26,18 +25,43 @@ body {
   text-align: center;
 }
 
-/*#main {
+#main {
+  display: flex;
   font-size: 1.3em;
-  height: 100vh;
+  background: green;
+  height: 50vh;
+  padding: 10px;
+  align-items: center;
+}
+
+#main-container, #ryo {
+  height: 100%;
+  width: 50%;
+}
+
+#main-container {
+  background: yellow;
+  margin: 3rem;
+}
+
+#main-header-2 {
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+#about {
+  font-size: 1.3em;
+  background: red;
+  height: 50vh;
   padding: 10px;
   align-items: center;
 }
 
 #links {
+  background: blue;
   padding: 50px;
-  height: 100vh;
+  height: 50vh;
 }
-*/
 
 footer {
   position: fixed;
