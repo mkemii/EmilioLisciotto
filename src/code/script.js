@@ -36,7 +36,7 @@ window.onblur = function() {
 }
 
 window.onfocus = function() {
-  document.title = 'MKEmii';
+  document.title = 'Emilio Lisciotto';
 }
 
 //######################################################################
