@@ -78,6 +78,21 @@ body {
   line-height: 1.5;
 }
 
+.progetti {
+   display: flex;
+   flex-direction: row;
+   padding: 30px;
+   height: 500px;
+   width: 100%;
+}
+
+.progetto {
+  height: 100px;
+  width: 80px;
+  background-color: azure;
+  color: #2F2F2F;
+}
+
 .copyright {
   position: fixed;
   bottom: 0;
