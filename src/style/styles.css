@@ -27,10 +27,8 @@ body {
 
 #main {
   display: flex;
-  font-size: 1.3em;
-  background: green;
   height: 50vh;
-  padding: 10px;
+  padding-bottom: 150px;
   align-items: center;
 }
 
@@ -40,25 +38,28 @@ body {
 }
 
 #main-container {
-  background: yellow;
-  margin: 3rem;
+  margin: 20px;
 }
 
-#main-header-2 {
+.main-header {
   font-weight: 700;
   font-size: 6rem;
 }
 
 #about {
   font-size: 1.3em;
-  background: red;
+  /*background: red;*/
   height: 50vh;
   padding: 10px;
   align-items: center;
 }
 
+#about-container {
+  line-height: 1.5;
+}
+
 #links {
-  background: blue;
+  /*background: blue;*/
   padding: 50px;
   height: 50vh;
 }
@@ -96,10 +97,10 @@ footer {
 }
 
 #TopBtn:hover {
-  background-color: #444444;
+  background-color: #C3B1E1;
 }
 
-/*
+
 #links-txt {
   padding-top: 70px;
   display: flex;
@@ -115,7 +116,7 @@ footer {
   flex: 1;
   margin: 20px;
   padding: 20px;
-  background-color: #444444;
+  background-color: #967BB6;
   color: #fff;
   border-radius: 4px;
   transition: all .3s ease;
