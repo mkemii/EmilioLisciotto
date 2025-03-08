@@ -46,6 +46,12 @@ body {
   font-size: 6rem;
 }
 
+@media screen and (max-width: 950px) {
+  #ryo {
+    display: none;
+  }
+}
+
 #about {
   font-size: 1.3em;
   /*background: red;*/
