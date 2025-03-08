@@ -10,12 +10,9 @@ body {
     display: inline-flex;
 }
 
-.header {
-  font-family: monospace;
-  font-size: 30px;
-  padding: 15px;
+a {
+  text-decoration: none; 
 }
-
 
 #navbar {
   position: fixed;
@@ -58,7 +55,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 65%;
+  max-width: 60%;
   align-items: center;
   background: rgba(255, 255, 255, 0.2); /* Sfondo trasparente */
   backdrop-filter: blur(13px); /* Effetto sfocato */
@@ -73,13 +70,14 @@ body {
 #main {
   font-family: monospace;
   font-size: 1.3em;
-  height: 300px;
+  height: 100vh;
   padding: 10px;
   align-items: center;
 }
 
 #links {
-  height: 200px;
+  padding: 50px;
+  height: 100vh;
 }
 
 footer {
@@ -92,6 +90,12 @@ footer {
   vertical-align: middle;
   line-height: 40px;  
   color: #fff;
+}
+
+.header {
+  font-family: monospace;
+  font-size: 30px;
+  padding: 15px;
 }
 
 #TopBtn {
@@ -114,21 +118,33 @@ footer {
   background-color: #444444;
 }
 
+#links-txt {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 .BtnLink {
-  position: relative;
-  margin: 15px;
-  padding: 8px;
-  font-size: 18px;
-  background-color: #555 ;
-  color: #fff;
-  border: none;
-  outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: #444444;
   border-radius: 4px;
-  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.BtnLink .fab {
+  font-size: 50px;
+  margin: 16px 0;
 }
 
 .BtnLink:hover {
-  background-color: #444444;
+  transform: scale(1.2);
 }
 
 ::-webkit-scrollbar {
