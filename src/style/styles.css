@@ -20,6 +20,10 @@ body {
     font-family: sans-serif;
 }
 
+.fab {
+  padding: 5px;
+}
+
 .underscored {
   border-bottom: 2px solid #D9D9D9; 
   display: inline;
@@ -62,7 +66,7 @@ body {
   }
 }
 
-#about {
+#about, #competenze {
   font-size: 1.3em;
   /*background: red;*/
   height: 50vh;
@@ -70,7 +74,7 @@ body {
   align-items: center;
 }
 
-#about-container {
+.paragrafi-container {
   line-height: 1.5;
 }
 
