@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,10 +12,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     display: inline-flex;
-}
-
-a {
-  text-decoration: none; 
+    font-family: sans-serif;
 }
 
 #navbar {
@@ -68,7 +69,6 @@ a {
 }
 
 #main {
-  font-family: monospace;
   font-size: 1.3em;
   height: 100vh;
   padding: 10px;
@@ -93,7 +93,6 @@ footer {
 }
 
 .header {
-  font-family: monospace;
   font-size: 30px;
   padding: 15px;
 }
@@ -108,7 +107,6 @@ footer {
   border: none;
   outline: none;
   background-color: #555;
-  color: #fff;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -134,6 +132,7 @@ footer {
   margin: 20px;
   padding: 20px;
   background-color: #444444;
+  color: #fff;
   border-radius: 4px;
   transition: all .3s ease;
 }
@@ -141,6 +140,15 @@ footer {
 .BtnLink .fab {
   font-size: 50px;
   margin: 16px 0;
+}
+
+.BtnLink a{
+  margin: 18px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 0;
+  transition: .3s ease;
 }
 
 .BtnLink:hover {

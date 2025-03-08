@@ -46,7 +46,7 @@ window.onfocus = function() {
 var quotes = document.getElementById('quotes');
 
 var typewriter = new Typewriter(quotes, {
-    strings: ['"hello"', '"ts pmo"', '"sono gay"'],
+    strings: ['"hello"', '"ts pmo -dreamybull"', '"sono gay"'],
     autoStart: true,
     loop: true,
     delay: 150,
