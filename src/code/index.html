@@ -9,26 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../style/styles.css">
-    <link rel="icon" type="image/x-icon" href="/public/icon.png">
-    <title>MKEmii</title>
+    <link rel="icon" type="image/x-icon" href="/public/ryo.jpeg">
+    <title>Emilio Lisciotto</title>
 </head>
 
 <body>
-
-    <nav id="navbar">
-        <button class="nav-btn" id="abtButton">About me</button>
-        <button class="nav-btn">Competenze</button>
-        <button class="nav-btn">Progetti</button>
-        <button class="nav-btn" id="linkButton">Links</button>
-    </nav>
 
     <button onclick="topFunction()" id="TopBtn"><i class="fa-solid fa-arrow-up"></i></button>
 
     <div class="container">
 
-        <h1 id="quotees"></h1>
-
-        <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" id="main">
+        <div data-aos="fade-in" data-aos-duration="1200" data-aos-easing="ease-in-out" id="main">
             <h1 class="header">About me</h1>
             <p id="main-txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -41,10 +32,10 @@
             </p>
         </div>
         
-        <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" id="links">
+        <div data-aos="fade-in" data-aos-duration="1200" data-aos-easing="ease-in-out" id="links">
             <h1 class="header">I miei link</h1>
 
-            <div id="links-txt">
+            <div id="links-container">
 
                 <div class="BtnLink link-1">
                     <div class="fab fa-github"></div><a href="https://www.instagram.com/emii.dev/" target="_blank"> Github</a></div>
@@ -65,7 +56,6 @@
         @ MKEmii, <span id="copy"></span>
     </footer>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
