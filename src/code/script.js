@@ -40,15 +40,17 @@ window.onfocus = function() {
 }
 
 //######################################################################
-//BOTTONI REDIRECT TO SECTION ##########################################
+//Typewriter ###########################################################
 //######################################################################
 
-//about me
-document.getElementById('abtButton').addEventListener('click', function() {
-   window.scrollTo({top: 0, behavior: 'smooth'});
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  delay: 150,
+  cursor: '',
+  loop: false,
 });
 
-//link
-document.getElementById('linkButton').addEventListener('click', function() {
-   document.getElementById('links').scrollIntoView({ behavior: 'smooth' });
-});
+typewriter
+.typeString('Emilio Lisciotto') // Inserisci il tuo testo
+.start();
