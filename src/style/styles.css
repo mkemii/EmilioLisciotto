@@ -1,27 +1,29 @@
+@font-face {
+  font-family: restora;
+  src: url(/fonts/Restora.otf);
+}
+
 * {
   text-decoration: none;
   color: #fbfcf8;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 200vh; 
-    background-color: #2F2F2F;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: inline-flex;
-    font-family: sans-serif;
-}
-
-.fab {
-  padding: 5px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #2F2F2F;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: restora;
+  align-items: center;
 }
 
 .underscored {
@@ -29,119 +31,173 @@ body {
   display: inline;
 }
 
+.fab {
+  padding: 3px;
+}
+
 .container {
   margin: 30px auto;
-  max-width: 80%;
-  height: max-content;
-  align-items: center;
+  max-width: 90%;
   padding: 20px;
   text-align: center;
 }
 
 #main {
   display: flex;
-  height: 50vh;
-  padding-bottom: 150px;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 50px;
+  justify-content: center;
   align-items: center;
 }
 
-#main-container, #ryo {
-  height: 100%;
+#main-container {
   width: 50%;
 }
 
 #main-container {
   margin: 20px;
   align-content: center;
+  text-align: center;
 }
 
 .main-header {
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 @media screen and (max-width: 950px) {
   #ryo {
     display: none;
   }
+  #main-container {
+    width: 100%;
+  }
+  .img-responsive {
+    height: 50%;
+    width:  50%;
+  }
 }
 
-#about, #competenze {
-  font-size: 1.3em;
-  /*background: red;*/
-  height: 75vh;
-  padding: 10px;
-  align-items: center;
+@media screen and (max-width: 600px) {
+  .main-header {
+    font-size: 2.5rem;
+  }
 }
 
-.paragrafi-container {
-  line-height: 1.5;
+.img-responsive {
+  display: inline-block;
+  margin: 30px;
+}
+
+.stuff-container {
+  margin: 30px;
 }
 
 .progetti {
-   display: flex;
-   flex-direction: row;
-   padding: 30px;
-   height: 500px;
-   width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 30px;
+  width: 100%;
 }
 
 .progetto {
-  height: 100px;
-  width: 80px;
-  background-color: azure;
-  color: #2F2F2F;
+ background-color: #967BB6;
+ color: #2F2F2F;
+ width: 300px;
+ border-radius: 10px; 
+ overflow: hidden;
+ text-align: center;
+ transition: transform 0.3s ease-in-out;
+}
+
+.progetto:hover {
+ transform: scale(1.05); 
+}
+
+.progetto img {
+ width: 100%; 
+ height: 180px; 
+ object-fit: cover; 
+}
+
+.progetto .card-content {
+ padding: 15px;
+}
+
+.progetto h3 {
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+}
+
+.progetto p {
+ font-size: 1rem;
+ color: #444;
+ margin-bottom: 15px;
+}
+
+.progetto .btn {
+ display: inline-block;
+ background-color: #C3B1E1;
+ color: white;
+ padding: 10px 15px;
+ border-radius: 5px;
+ text-decoration: none;
+ transition: background-color 0.3s;
+}
+
+.progetto .btn:hover {
+ background-color: #2F2F2F;
+}
+
+@media screen and (max-width: 768px) {
+ .progetto {
+   width: 90%; 
+ }
 }
 
 .copyright {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
-  max-width: 100%;
   height: 40px;
   background-color: #967BB6;
   color: #fbfcf8;
   text-align: center;
-  vertical-align: middle;
   line-height: 40px;
-}
-
-.header {
-  font-size: 30px;
-  padding: 15px;
+  margin-top: 20px;
 }
 
 #TopBtn {
   display: none;
   position: fixed;
   bottom: 60px;
-  right: 50px;
-  z-index: 99;
+  right: 20px;
   font-size: 18px;
   border: none;
-  outline: none;
   background-color: #967BB6;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
+  z-index: 1000;
 }
 
 #TopBtn:hover {
   background-color: #C3B1E1;
 }
 
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #888;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #555;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #444444;
-  }
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
